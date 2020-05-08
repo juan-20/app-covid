@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fundo"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/imgcovid"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="242dp"
+            android:layout_height="73dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/entrar_casa"
+            android:layout_width="253dp"
+            android:layout_height="66dp"
+            android:text="Quando entrar em casa"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="304dp"
+            android:background="@android:color/holo_orange_dark"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="242dp"
+            android:layout_height="73dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/sair_rua"
+            android:layout_width="253dp"
+            android:layout_height="66dp"
+            android:text="Quando for para a rua"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="386dp"
+            android:background="@android:color/holo_orange_dark"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="242dp"
+            android:layout_height="73dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/grupo_risco"
+            android:layout_width="253dp"
+            android:layout_height="66dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Convivência com o grupo de risco" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  />
+
+
+        <TextView
+            android:id="@+id/hiperlinks"
+            android:layout_width="242dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:text="www.cotemig.com.br"
+            android:visibility="visible"
+            android:background="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:linksClickable="true"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
